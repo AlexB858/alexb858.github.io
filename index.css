@@ -1,6 +1,8 @@
 body {
 	background-image: url("https://cdn.pixabay.com/photo/2014/09/03/14/29/elder-434643_960_720.jpg");
 	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 	color: white;
 	text-align: center;
 	font-family: "Times New Roman", Monospace;
