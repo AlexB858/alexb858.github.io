@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>form</title>
+  </head>
+
+  <body>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+    </div>
+    
+    <form method="post" action="form-results.html">
+      <h1>Tell me about your cat</h1>
+
+      <label for="name">Your cat's name</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="secret">Your cat's secret</label>
+      <input type="password" id="secret" name="secret">
+      <br>
+      <label for="age">Your cat's age</label>
+      <input type="number" id="age" name="age" step="1" min="1" max="50"> <!-- use step="int" to make the number go by specific increments -->
+      <br>
+      <label for="cuteness">How cute is your cat</label>
+      <input type="range" id="cuteness" name="cuteness" min="0" max="5" step="0.5" value="2.5">
+      <br>
+      
+      <div>
+        <input type="checkbox" id="wtail" name="wiggly" value="wiggly-tail">
+        <label for="wtail">Wiggly tail</label>
+        <br>
+        <input type="checkbox" id="wears" name="wiggly" value="wiggly-ears">
+        <label for="wears">Wiggly ears</label>
+        <br>
+        <input type="checkbox" id="wnose" name="wiggly" value="wiggly-nose">
+        <label for="wnose">Wiggly nose</label>
+        <br>
+      </div>
+      
+
+      <div>
+        <p>What color is your cat?</p>
+        <input type="radio" id="orange" name="color" value="orange">
+        <label for="orange">Orange</label>
+        <br>
+        <input type="radio" id="black" name="color" value="black">
+        <label for="black">Black</label>
+        <br>
+        <input type="radio" id="grey" name="color" value="grey">
+        <label for="grey">Grey</label>
+        <br>
+      </div>
+
+      
+      <select id="" name="">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+
+      <br>
+      <label for="how-get-cat">How did you get your cat?</label>
+      <input id="how-get-cat" name="getcat" type="text" list="howget">
+      <datalist id="howget">
+        <option value="Found as a stray"></option>
+        <option value="From the pound"></option>
+        <option value="From a breeder"></option>
+        <option value="bought from a non breeder private party"></option>
+        <option value="old man left it at your doorstep"></option>
+      </datalist>
+      <br>
+      
+      <label for="extra">Anything else about your cat</label>
+      <textarea id="extra" name="extra" cols="40" rows="5">
+      </textarea>
+      <br>
+      
+      <input type="submit" value="Send">
+
+    </form>
+  </body>
+
+</html>
